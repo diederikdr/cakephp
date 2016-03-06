@@ -647,7 +647,7 @@ class Router {
 				} else {
 					foreach (static::$_validExtensions as $name) {
 						if (strcasecmp($name, $match) === 0) {
-							$url = substr($url, 0, strpos($url, '.' . $name));
+							$url = substr($url, 0, strpos($url, '.' . $match));
 							$ext = $match;
 							break;
 						}
